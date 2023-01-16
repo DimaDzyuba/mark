@@ -1,5 +1,9 @@
-.body {
-  width: 100%;
+.wrapper {
+  background: url('../../public/images/mainBG.jpg');
   height: 100vh;
-  background: url("../image/mainBG.jpg");
+}
+
+.container {
+  max-width: 1720px;
+  margin: 0 auto;
 }
