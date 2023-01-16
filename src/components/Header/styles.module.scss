@@ -1,0 +1,39 @@
+.header {
+  color: #FFFFFF;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+
+  &__logo {
+
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 1.6rem;
+    align-items: center;
+    font-size: 0.81rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    line-height: 110%;
+  }
+
+  &__button_login {
+    cursor: pointer;
+    padding: 0.9rem 4.3rem;
+    text-transform: uppercase;
+    border: 1px solid #FF1822;
+    border-radius: 10rem;
+
+    &:hover {
+      color:#FF1822;
+    }
+  }
+
+  &__button_registration {
+    &:hover {
+      color:#FF1822;
+    }
+  }
+
+}
