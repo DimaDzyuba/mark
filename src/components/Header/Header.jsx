@@ -11,9 +11,9 @@ export const Header = () => {
                 </Link>
             </div>
             <div className={styles.header__buttons}>
-                <button className={styles.header__button_login}>
+                <Link to='/auth/login' className={styles.header__button_login}>
                     <span>Вход</span>
-                </button>
+                </Link>
                 <Link to='/auth/registration' className={styles.header__button_registration}><span>Регистрация</span></Link>
             </div>
         </header>

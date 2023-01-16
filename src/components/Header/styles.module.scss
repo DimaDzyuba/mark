@@ -22,17 +22,24 @@
     cursor: pointer;
     padding: 0.9rem 4.3rem;
     text-transform: uppercase;
-    border: 1px solid #FF1822;
+    border: 1px solid #FFFFFF;
     border-radius: 10rem;
+    color: #FFFFFF;
+    -webkit-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
 
     &:hover {
-      color:#FF1822;
+      color: #FF1822;
+      border: 1px solid #FF1822;
     }
   }
 
   &__button_registration {
+    -webkit-transition: 300ms ease-in-out;
+    transition: 300ms ease-in-out;
     &:hover {
       color:#FF1822;
+
     }
   }
 
