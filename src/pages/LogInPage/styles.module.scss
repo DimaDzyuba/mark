@@ -9,7 +9,6 @@
   background: #0B0C0C;
   clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 75%, 75% 100%, 20% 100%, 0 100%, 0 0);
 
-
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -42,25 +41,25 @@
             0.8px -0.8px 0   #FFFFFF,
             -0.8px  0.8px 0   #FFFFFF,
             0.8px  0.8px 0   #FFFFFF;
-      span {
-        text-shadow:
-            -0   -0.8px 0   #FF1921,
-            0   -0.8px 0   #FF1921,
-            -0    0.8px 0   #FF1921,
-            0    0.8px 0   #FF1921,
-            -0.8px -0   0   #FF1921,
-            0.8px -0   0   #FF1921,
-            -0.8px  0   0   #FF1921,
-            0.8px  0   0   #FF1921,
-            -0.8px -0.8px 0   #FF1921,
-            0.8px -0.8px 0   #FF1921,
-            -0.8px  0.8px 0   #FF1921,
-            0.8px  0.8px 0   #FF1921,
-            -0.8px -0.8px 0   #FF1921,
-            0.8px -0.8px 0   #FF1921,
-            -0.8px  0.8px 0   #FF1921,
-            0.8px  0.8px 0   #FF1921;
-      }
+    span {
+      text-shadow:
+              -0   -0.8px 0   #FF1921,
+              0   -0.8px 0   #FF1921,
+              -0    0.8px 0   #FF1921,
+              0    0.8px 0   #FF1921,
+              -0.8px -0   0   #FF1921,
+              0.8px -0   0   #FF1921,
+              -0.8px  0   0   #FF1921,
+              0.8px  0   0   #FF1921,
+              -0.8px -0.8px 0   #FF1921,
+              0.8px -0.8px 0   #FF1921,
+              -0.8px  0.8px 0   #FF1921,
+              0.8px  0.8px 0   #FF1921,
+              -0.8px -0.8px 0   #FF1921,
+              0.8px -0.8px 0   #FF1921,
+              -0.8px  0.8px 0   #FF1921,
+              0.8px  0.8px 0   #FF1921;
+    }
   }
 
   &__input {
@@ -72,10 +71,9 @@
     padding: 1rem;
   }
 
-  &__inputName {
+  &__inputEmail {
     margin-top: 3rem;
   }
-
 
   &__button {
     position: relative;
@@ -99,15 +97,33 @@
     }
   }
 
-  &__errorInputText{
-    font-size: 10px;
-    font-weight: 500;
-    color: #FF1822;
+  &__checkbox_wrapper {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
 
-  &__errorInput {
-    border: 1px solid #FF1822;
+  &__input_checkbox {
+    border: 0;
+    background-color: #1A1A1A;
+    width: 2rem;
+    height: 2rem;
+  }
+
+  &__checkbox_label {
+    padding-left: 0.8rem;
+    color: #A1A1A1;
+    line-height: 132%;
+  }
+
+  &__link_restore {
+    margin: 2rem auto;
+    color: #A1A1A1;
+    line-height: 132%;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
-
-
