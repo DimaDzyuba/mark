@@ -4,7 +4,7 @@
   max-width: 45.43rem;
   margin: 0 auto;
   background: #0B0C0C;
-  clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 74%, 74% 100%, 20% 100%, 0 100%, 0 0);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 75%, 75% 100%, 20% 100%, 0 100%, 0 0);
 
   &__wrapper {
     display: flex;
@@ -14,8 +14,8 @@
   }
 
   &__title {
-    font-family: 'Roboto Condensed';
-    font-size: 2.8rem;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 3.5rem;
     font-weight: 900;
     color: #0B0C0C;
     letter-spacing: 0.05em;
@@ -68,8 +68,13 @@
     padding: 1rem;
   }
 
+  &__inputName {
+    margin-top: 3rem;
+  }
+
 
   &__button {
+    position: relative;
     margin-top: 2rem;
     background: #FF1822;
     padding: 1.8rem 0;
@@ -77,7 +82,28 @@
     text-transform: uppercase;
     font-weight: 600;
     line-height: 110%;
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 90% 100%, 0 100%, 0 50%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 92% 100%, 0 100%, 0 50%);
+
+    &::before {
+      content: '';
+      width: 5rem;
+      height: 1px;
+      background: #FFFFFF;
+      position: absolute;
+      top: 50%;
+      left: -2.5rem;
+    }
+  }
+
+  &__errorInputText{
+    font-size: 10px;
+    font-weight: 500;
+    color: #FF1822;
+  }
+
+  &__errorInput {
+    border: 1px solid #FF1822;
   }
 }
+
 
