@@ -1,9 +1,11 @@
 .wrapper {
   background: url('../../public/images/mainBG.jpg');
   height: 100vh;
+
 }
 
 .container {
   max-width: 1720px;
   margin: 0 auto;
+  position: relative;
 }
