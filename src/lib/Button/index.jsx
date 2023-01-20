@@ -1,9 +1,11 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styles from './styles.module.scss'
 
-export const Button = () => {
-  const [state, setState] = useState()
+export const Button = ({ onSubmit, title }) => {
   return (
-        <div className={styles}></div>
+      <button className={styles.button} onSubmit={onSubmit}>
+        {title}
+      </button>
+
   )
 }

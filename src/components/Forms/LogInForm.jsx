@@ -2,7 +2,10 @@ import React from 'react'
 import styles from '../../pages/LogInPage/styles.module.scss'
 import { useForm } from 'react-hook-form'
 import classNames from 'classnames'
-import { Link } from 'react-router-dom'
+import { Links } from '../../lib/Links'
+import { Title } from '../../lib/Title'
+import { Input } from '../../lib/Input'
+import { Button } from '../../lib/Button'
 
 export const LogInForm = () => {
   const { handleSubmit, formState: { errors }, formState } = useForm({
@@ -12,22 +15,27 @@ export const LogInForm = () => {
   return (
         <form className={styles.form}>
             <div className={styles.form__wrapper}>
-                <h1 className={styles.form__title}>вход
-                    <br/>В Отмечалочку<span>.</span>
-                </h1>
+                <Title
+                    title='вход'
+                    title2='в отмечалочку'
+                    span='.'
+                />
 
-                <input className= {classNames(styles.form__input, styles.form__inputEmail)} type='email' placeholder="Почта" />
+                <Input
+                    type='email'
+                    placeholder='Почта'
+                />
 
-                <input className={styles.form__input} type='password' placeholder="Пароль" />
-                <divc className={styles.form__checkbox_wrapper}>
-                    <input className={styles.form__input_checkbox} type='checkbox' placeholder="Пароль" />
+                <Input
+                    type='password'
+                    placeholder='Пароль'
+                />
+                <div className={styles.form__checkbox_wrapper}>
+                    <input className={styles.form__input_checkbox} type='checkbox' />
                     <label className={styles.form__checkbox_label}>Запомните меня таким</label>
-                </divc>
-
-                <button className={styles.form__button} >
-                    Залогиниться
-                </button>
-                <Link to='/auth/restore' className={styles.form__link_restore}>Забыл пароль?</Link>
+                </div>
+                <Button title='Залогиниться' />
+                <Links title='Забыл пароль?' to='/auth/restore' />
             </div>
 
         </form>

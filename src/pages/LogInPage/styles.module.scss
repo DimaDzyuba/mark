@@ -7,94 +7,12 @@
   min-width: 45.43rem;
   margin: 0 auto;
   background: #0B0C0C;
-  clip-path: polygon(20% 0%, 80% 0%, 100% 0, 100% 75%, 75% 100%, 20% 100%, 0 100%, 0 0);
 
   &__wrapper {
     display: flex;
     flex-direction: column;
     max-width: 30rem;
     margin: 0 auto;
-  }
-
-  &__title {
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 3.5rem;
-    font-weight: 900;
-    color: #0B0C0C;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    line-height: 110%;
-    text-shadow:
-            -0   -0.8px 0   #FFFFFF,
-            0   -0.8px 0   #FFFFFF,
-            -0    0.8px 0   #FFFFFF,
-            0    0.8px 0   #FFFFFF,
-            -0.8px -0   0   #FFFFFF,
-            0.8px -0   0   #FFFFFF,
-            -0.8px  0   0   #FFFFFF,
-            0.8px  0   0   #FFFFFF,
-            -0.8px -0.8px 0   #FFFFFF,
-            0.8px -0.8px 0   #FFFFFF,
-            -0.8px  0.8px 0   #FFFFFF,
-            0.8px  0.8px 0   #FFFFFF,
-            -0.8px -0.8px 0   #FFFFFF,
-            0.8px -0.8px 0   #FFFFFF,
-            -0.8px  0.8px 0   #FFFFFF,
-            0.8px  0.8px 0   #FFFFFF;
-    span {
-      text-shadow:
-              -0   -0.8px 0   #FF1921,
-              0   -0.8px 0   #FF1921,
-              -0    0.8px 0   #FF1921,
-              0    0.8px 0   #FF1921,
-              -0.8px -0   0   #FF1921,
-              0.8px -0   0   #FF1921,
-              -0.8px  0   0   #FF1921,
-              0.8px  0   0   #FF1921,
-              -0.8px -0.8px 0   #FF1921,
-              0.8px -0.8px 0   #FF1921,
-              -0.8px  0.8px 0   #FF1921,
-              0.8px  0.8px 0   #FF1921,
-              -0.8px -0.8px 0   #FF1921,
-              0.8px -0.8px 0   #FF1921,
-              -0.8px  0.8px 0   #FF1921,
-              0.8px  0.8px 0   #FF1921;
-    }
-  }
-
-  &__input {
-    border: 0;
-    background: #1A1A1A;
-    margin-top: 1rem;
-    line-height: 132%;
-    color: #A1A1A1;
-    padding: 1rem;
-  }
-
-  &__inputEmail {
-    margin-top: 3rem;
-  }
-
-  &__button {
-    position: relative;
-    margin-top: 2rem;
-    background: #FF1822;
-    padding: 1.8rem 0;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-weight: 600;
-    line-height: 110%;
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 92% 100%, 0 100%, 0 50%);
-
-    &::before {
-      content: '';
-      width: 5rem;
-      height: 1px;
-      background: #FFFFFF;
-      position: absolute;
-      top: 50%;
-      left: -2.5rem;
-    }
   }
 
   &__checkbox_wrapper {
@@ -115,15 +33,5 @@
     padding-left: 0.8rem;
     color: #A1A1A1;
     line-height: 132%;
-  }
-
-  &__link_restore {
-    margin: 2rem auto;
-    color: #A1A1A1;
-    line-height: 132%;
-
-    &:hover {
-      text-decoration: underline;
-    }
   }
 }
