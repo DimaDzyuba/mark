@@ -1,0 +1,20 @@
+.button {
+  position: relative;
+  margin-top: 2rem;
+  background: #FF1822;
+  padding: 1.8rem 0;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 600;
+  line-height: 110%;
+
+  &::before {
+    content: '';
+    width: 5rem;
+    height: 1px;
+    background: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    left: -2.5rem;
+  }
+}

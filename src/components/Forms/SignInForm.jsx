@@ -4,6 +4,7 @@ import { useForm } from 'react-hook-form'
 import classNames from 'classnames'
 import { Input } from '../../lib/Input'
 import { Title } from '../../lib/Title'
+import { Button } from '../../lib/Button'
 
 export const SignInForm = () => {
   const { register, handleSubmit, formState: { errors }, formState } = useForm({
@@ -14,13 +15,11 @@ export const SignInForm = () => {
       pass: ''
     }
   })
-  const onSubmit = data => console.log(data)
-  console.log(errors, formState)
-  function handleChange (event) {
-    console.log(event.target.value)
-  }
+  // function handleChange (event) {
+  //   console.log(event.target.value)
+  // }
   return (
-        <form onSubmit={handleSubmit(onSubmit)} className={styles.form}>
+        <form className={styles.form}>
             <div className={styles.form__wrapper}>
                 <Title
                     title='регистрация'
@@ -30,7 +29,7 @@ export const SignInForm = () => {
                 <Input
                     type='text'
                     placeholder='Имя и Фамилия'
-                    onChange={handleChange}
+                    // onChange={handleChange}
                 />
                 <Input
                     type='email'
@@ -44,10 +43,7 @@ export const SignInForm = () => {
                     type='password'
                     placeholder='Еще раз пароль'
                 />
-
-                <button className={styles.form__button} placeholder='регистрация' onSubmit={handleSubmit(onSubmit)}>
-                    Регистрация
-                </button>
+                <Button title='Регистрация' />
             </div>
 
         </form>
