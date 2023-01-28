@@ -1,11 +1,28 @@
 .input {
-  width: 100%;
-  height: calc(3.25rem + 2px);
-  padding: 0.375rem 0.75rem;
-  border: 0;
-  background: #1A1A1A;
-  margin-top: 1rem;
-  line-height: 132%;
-  color: #A1A1A1;
 
+
+  margin-top: 1rem;
+
+ input {
+   width: 100%;
+   height: calc(3.25rem + 2px);
+   padding: 0.375rem 0.75rem;
+   border: 0;
+   background: #1A1A1A;
+   line-height: 132%;
+   color: #A1A1A1;
+ }
+}
+
+.email {
+  input{
+
+  }
+}
+
+.errors {
+
+  input {
+    border: 1px solid red;
+  }
 }
