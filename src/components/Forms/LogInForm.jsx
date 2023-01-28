@@ -1,7 +1,6 @@
 import React from 'react'
 import styles from '../../pages/LogInPage/styles.module.scss'
 import { useForm } from 'react-hook-form'
-import classNames from 'classnames'
 import { Links } from '../../lib/Links'
 import { Title } from '../../lib/Title'
 import { Input } from '../../lib/Input'

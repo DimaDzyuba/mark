@@ -1,13 +1,12 @@
 import React from 'react'
 import styles from '../../pages/SignInPage/styles.module.scss'
 import { useForm } from 'react-hook-form'
-import classNames from 'classnames'
 import { Input } from '../../lib/Input'
 import { Title } from '../../lib/Title'
 import { Button } from '../../lib/Button'
 
 export const SignInForm = () => {
-  const { register, handleSubmit, formState: { errors }, formState } = useForm({
+  const { register, formState: { errors }, formState } = useForm({
     mode: 'onBlur',
     defaultValues: {
       userName: '',
@@ -15,6 +14,7 @@ export const SignInForm = () => {
       pass: ''
     }
   })
+
   // function handleChange (event) {
   //   console.log(event.target.value)
   // }
@@ -34,6 +34,7 @@ export const SignInForm = () => {
                 <Input
                     type='email'
                     placeholder='Почта'
+
                 />
                 <Input
                     type='password'
